@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <!-- https://coolors.co/006466-065a60-0b525b-144552-1b3a4b-212f45-272640-312244-3e1f47-4d194d -->
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +10,49 @@
     <title>Ishant Sharma</title>
 </head>
 <body>
-    <div class="navDiv">
-        <div class="logoDiv">
-        <div class="navImg">
-            <img
-            src="https://avatars.githubusercontent.com/u/74040166?v=4"
-            alt="LOGO" />
-            <div class="logoName">Organization</div>
-        </div>
+    <div id="particles-js"></div>
+    <div class="wrapper">
+        <div class="navDiv">
+            <div class="logoDiv">
+                <div class="navImg">
+                <img
+                src="https://avatars.githubusercontent.com/u/74040166?v=4"
+                alt="LOGO" />
+                <div class="logoName">Ishant Sharma</div>
+            </div>
         </div>
         <nav class="navLinks">
-          <ul>
+            <ul>
             <li><a class="navLinksA" href="#">Home</a></li>
             <li><a class="navLinksA" href="#">About</a></li>
             <li><a class="navLinksA" href="#">Skills</a></li>
             <li><a class="navLinksA" href="#">Contact</a></li>
-          </ul>
-        </nav>
+        </ul>
+    </nav>
+</div>    
+<div class="main">
+            <div class="lhs">
+                <h1>Hi, I'm Ishant</h1>
+                <h2 class="typed"></h2>
+            </div>
+            <div class="rhs"></div>
+        </div>
+        
     </div>
+<script src="js/typed.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script>
+    // Can also be included with a regular script tag
+    var options = {
+    strings: ['A tech enthusiast', 'A data science enthusiast', 'A web developer', 'Likes problem solving'],
+    typeSpeed: 40,
+    smartBackspace: true
+    };
+
+    var typed = new Typed('.typed', options);
+
+</script>
 </body>
 </html>

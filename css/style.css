@@ -1,22 +1,45 @@
 
+:root{
+    --text:#fff;
+    --bg:#1B3A4B;
+    --nav: rgba(255, 255, 255, 0.075);
+}
+
 *{
-    --nav: brown;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display: block;
-    height: 100vh;
-    width: 100%;
-    background: #000;
-}
-
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    font-family: sans-serif
+    font-family: sans-serif;
+    color: var(--text);
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper{
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background: transparent;
+}
+
+#particles-js{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    background: var(--bg);
 }
 
 .navDiv{
@@ -33,6 +56,7 @@ html{
     display: flex;
     padding: .1rem;
     align-items: center;
+    width: 24rem;
 }
 
 .navImg img{
@@ -50,12 +74,12 @@ html{
     overflow: hidden;
     transition: all 1s ease;
     word-break: keep-all;
-    color: #202020;
+    color: var(--text);
     border-bottom: 2px solid #aaaaaa;
 }
 
 .navImg img:hover ~ .logoName{
-    width: 27%;
+    width: 12rem;
 }
 
 .navLinks{
@@ -85,7 +109,7 @@ html{
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: #202020;
+    color: var(--text);
 }
 
 .navLinksA::after{
@@ -104,4 +128,20 @@ html{
 .logoDiv{
     height: 100%;
     width: 100%;
+}
+
+.main{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main h1{
+    font-size: 5rem;
+}
+
+.main h2{
+    font-size: 2.5rem;
 }
