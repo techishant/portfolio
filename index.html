@@ -23,14 +23,15 @@
         </div>
         <nav class="navLinks">
             <ul>
-            <li><a class="navLinksA" href="#">Home</a></li>
-            <li><a class="navLinksA" href="#">About</a></li>
+            <li><a class="navLinksA" href="#home">Home</a></li>
+            <li><a class="navLinksA" href="#about">About</a></li>
             <li><a class="navLinksA" href="#">Skills</a></li>
             <li><a class="navLinksA" href="#">Contact</a></li>
         </ul>
     </nav>
-</div>    
-    <section class="landingSect">
+        </div>
+<div class="snapDiv">
+    <section id="home" class="landingSect">
         <div class="lhs">
             <img class="landingImg" src="assets/Landing_pic.svg">
         </div>
@@ -39,12 +40,23 @@
             <h2 class="typed"></h2>
         </div>
     </section>
+    <section id="about" class="aboutSect">
+        <div class="Aboutlogo AboutlogoTilt">
+            <img class="" src="https://avatars.githubusercontent.com/u/74040166?v=4">
+        </div>
+        <div>
+            <h1>About Me</h1>
+            <p>I'm Ishant Sharma. I am of 14. I'm pattionate about programming. I like problem solving a lot. I'm learning web development. I'm also into Data Science tooo and also loves to explore about computer.</p>
+        </div>
+    </section>
+</div>
 </div>
 <a href="https://storyset.com/web">Web illustrations by Storyset</a>
 <script src="js/typed.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/particles.js"></script>
 <script src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 <script>
     // Can also be included with a regular script tag
     var options = {
@@ -54,6 +66,12 @@
     };
 
     var typed = new Typed('.typed', options);
+
+    const tilt = $('.AboutlogoTilt').tilt();
+    tilt.on('change', callback);  // parameters: event, transforms
+    tilt.on('tilt.mouseLeave', callback); // parameters: event
+    tilt.on('tilt.mouseEnter', callback); // parameters: event
+
 
 </script>
 </body>

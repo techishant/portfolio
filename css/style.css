@@ -3,6 +3,7 @@
     --text:#fff;
     --bg:#1B3A4B;
     --nav: rgba(255, 255, 255, 0.075);
+    --light-bg: rgba(0, 0, 0, 0.048);
 }
 
 *{
@@ -24,12 +25,18 @@ body{
 }
 
 .wrapper{
+    scroll-behavior: smooth;
     position: relative;
     display: block;
     height: 100vh;
     width: 100%;
     overflow: auto;
     background: transparent;
+    scroll-snap-type: y mandatory;
+}
+
+.wrapper section, .navDiv{
+    scroll-snap-align: end;
 }
 
 #particles-js{
@@ -169,4 +176,45 @@ body{
 .landingImg{
     height: 60%;
     width: 60%;
+}
+
+.aboutSect{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-bg);
+}
+
+.Aboutlogo{
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    border: .5rem solid var(--text);
+    overflow: hidden;
+}
+
+.Aboutlogo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: inherit;
+    width: inherit;
+}
+
+.aboutSect p{
+    font-size: 2rem;
+    width: 46rem;
+    /* background: red; */
+}
+
+.aboutSect h1{
+    font-size: 5rem;
+}
+
+.aboutSect div:nth-child(2){
+    padding: 2rem;
 }
