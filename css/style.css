@@ -4,6 +4,7 @@
     --bg:#1B3A4B;
     --nav: rgba(255, 255, 255, 0.075);
     --light-bg: rgba(0, 0, 0, 0.048);
+    ---light-bg1: rgba(255, 255, 255, 0.021);
 }
 
 *{
@@ -217,4 +218,10 @@ body{
 
 .aboutSect div:nth-child(2){
     padding: 2rem;
+}
+
+.skillSect{
+    height: 100vh;
+    width: 100%;
+    background: var(---light-bg1);
 }
