@@ -46,7 +46,7 @@
         </div>
         <div>
             <h1>About Me</h1>
-            <p>I'm Ishant Sharma. I am of 14. I'm pattionate about programming. I like problem solving a lot. I'm learning web development. I'm also into Data Science tooo and also loves to explore about computer.</p>
+            <p id="AboutCont">I'm Ishant Sharma. I am of 14. I'm pattionate about programming. I like problem solving a lot. I'm learning web development. I'm also into Data Science tooo and also loves to explore about computer.</p>
         </div>
     </section>
 </div>
@@ -72,6 +72,20 @@
     tilt.on('change');  // parameters: event, transforms
     tilt.on('tilt.mouseLeave'); // parameters: event
     tilt.on('tilt.mouseEnter'); // parameters: event
+
+    var aboutCont = fetch('https://api.github.com/users/techishant',{
+        method:'get',
+        redirect:"follow"
+    })
+    .then(
+        (response)=> response.json()
+    )
+    .then(
+        (response) => {
+            console.log(response)
+            document.getElementById('AboutCont').innerText = response.bio;
+        }
+    )
 </script>
 </body>
 </html>
