@@ -1,7 +1,8 @@
 
 :root{
     --text:#fff;
-    --bg:#1B3A4B;
+    /* --bg:#1B3A4B; */
+    --bg:#212F45;
     --nav: rgba(255, 255, 255, 0.075);
     --light-bg: rgba(0, 0, 0, 0.048);
     ---light-bg1: rgba(255, 255, 255, 0.021);
