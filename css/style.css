@@ -9,12 +9,14 @@
     ---light-bg1: rgba(255, 255, 255, 0.021);
     --skobleOff: rgba(0, 100, 102);
     --wisteria: #BA9DD2;
+    --MidnightGreenEagleGreen-I: #144552;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 9;
 }
 
 html{
@@ -53,6 +55,7 @@ body{
     width: 100%;
     /* display: block; */
     background: var(--bg);
+    z-index: 1;
 }
 
 .navDiv{
@@ -63,6 +66,10 @@ body{
     font-size: 1.5rem;
     justify-content: space-evenly;
     background: var(--nav);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 64;
 }
 
 .navImg{
@@ -153,6 +160,39 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: space-evenly;
+    position: relative;
+    /* height: 50vh; */
+}
+
+.landingSect .wave{
+    position: absolute;
+    height: 123px;
+    width: 100%;
+    background: transparent;
+    bottom: 0;
+}
+
+.landingSect .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.landingSect .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: var(--MidnightGreenEagleGreen-I);
+    right: -1.5%;
+    top: 60%;
+}
+.landingSect .wave::after {
+    width: 55%;
+    height: 100%;
+    /* background: red; */
+    background: var(--bg);
+    left: -1.5%;
+    top: 40%;
 }
 
 .landingSect h1{
@@ -203,7 +243,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--light-bg);
+    background: var(--MidnightGreenEagleGreen-I);
 }
 
 .Aboutlogo{
