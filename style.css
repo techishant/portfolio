@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+:root{
+    --text:#fff;
+    /* --bg:#1B3A4B; */
+    --bg:#212F45;
+    --nav: rgba(255, 255, 255, 0.075);
+    --light-bg: rgba(0, 0, 0, 0.048);
+    ---light-bg1: rgba(255, 255, 255, 0.021);
+    --skobleOff: rgba(0, 100, 102);
+    --wisteria: #BA9DD2;
+    --MidnightGreenEagleGreen-I: #144552;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 9;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    color: var(--text);
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins';
+}
+
+.wrapper{
+    scroll-behavior: smooth;
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background: transparent;
+    scroll-snap-type: y mandatory;
+}
+
+.wrapper section, .navDiv{
+    scroll-snap-align: end;
+}
+
+#particles-js{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* display: block; */
+    background: var(--bg);
+    z-index: 1;
+}
+
+.navDiv{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+    background: var(--nav);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 64;
+}
+
+.navImg{
+    display: flex;
+    padding: .1rem;
+    align-items: center;
+    width: 24rem;
+}
+
+.navImg img{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    border: 2px solid var(--wisteria);
+    overflow: hidden;
+}
+
+.navImg .logoName{
+    display: block;
+    width: 0%;
+    height: 2rem;
+    overflow: hidden;
+    transition: all 1s ease;
+    /* word-break: keep-all; */
+    color: var(--text);
+    border-bottom: 2px solid var(--wisteria);
+}
+
+.logoName span{
+    white-space: nowrap;
+}
+
+.navImg img:hover ~ .logoName{
+    width: 11rem;
+}
+
+.navLinks{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    /* background: yellow; */
+}
+
+.navLinks ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.navLinks ul li{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+}
+
+.navLinks ul li a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.navLinksA::after{
+    content: " ";
+    display: block;
+    height: .2rem;
+    width: 0%;
+    background: var(--wisteria);
+    transition: all .8s ease;
+}
+
+.navLinksA:hover::after{
+    width: 100%;
+}
+
+.logoDiv{
+    height: 100%;
+    width: 100%;
+}
+
+
+.landingSect{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    position: relative;
+    /* height: 50vh; */
+}
+
+.landingSect .wave{
+    position: absolute;
+    height: 123px;
+    width: 100%;
+    background: transparent;
+    bottom: 0;
+}
+
+.landingSect .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.landingSect .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: var(--MidnightGreenEagleGreen-I);
+    right: -1.5%;
+    top: 60%;
+}
+.landingSect .wave::after {
+    width: 55%;
+    height: 100%;
+    /* background: red; */
+    background: var(--bg);
+    left: -1.5%;
+    top: 40%;
+}
+
+.landingSect h1{
+    font-size: 6rem;
+}
+
+.landingSect h2{
+    font-size: 2.5rem;
+}
+
+.landingSect
+
+.rhs{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rhs .typed{
+    display: inline-block;
+    height: 3.3rem;
+    overflow: hidden; 
+    font-family: 'Roboto Mono';
+    color: #48ddd6;
+    text-shadow:0px 0px 0px #BA9DD2;
+}
+
+.lhs{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingImg{
+    height: 60%;
+    width: 60%;
+}
+
+.aboutSect{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--MidnightGreenEagleGreen-I);
+}
+
+.Aboutlogo{
+    position: relative;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    border: .5rem solid var(--text);
+    overflow: hidden;
+}
+
+.Aboutlogo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: inherit;
+    width: inherit;
+}
+
+.aboutSect p{
+    font-size: 2rem;
+    width: 46rem;
+    /* background: red; */
+}
+
+.aboutSect h1{
+    font-size: 5rem;
+}
+
+.aboutSect div:nth-child(2){
+    padding: 2rem;
+}
+
+.skillSect{
+    height: 100vh;
+    width: 100%;
+    background: var(---light-bg1);
+}
+
+.skillSect ul li{
+    height: 6rem;
+    width: 50rem;
+    border-radius: 2rem;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.skillSect span{
+    color: #000000;
+    background: transparent;
+    height: 1.8rem;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: inset 0 0 3px #666;
+    position: relative;
+}
+
+.skillSect span::before{
+    content: "Python";
+    background: red;
+    height: inherit;
+    width: 50%;
+    position: absolute;
+    border-radius: inherit;
+    display: grid;
+    place-items: center;
+}
+
+.skillSect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
