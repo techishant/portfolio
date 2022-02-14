@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 :root{
     --text:#fff;
     /* --bg:#1B3A4B; */
@@ -24,6 +25,7 @@ html{
 body{
     height: 100vh;
     overflow: hidden;
+    font-family: 'Poppins';
 }
 
 .wrapper{
@@ -47,7 +49,7 @@ body{
     position: absolute;
     height: 100vh;
     width: 100%;
-    display: block;
+    /* display: block; */
     background: var(--bg);
 }
 
@@ -77,14 +79,18 @@ body{
 }
 
 .navImg .logoName{
-    display: inline-block;
+    display: block;
     width: 0%;
     height: 2rem;
     overflow: hidden;
     transition: all 1s ease;
-    word-break: keep-all;
+    /* word-break: keep-all; */
     color: var(--text);
     border-bottom: 2px solid #aaaaaa;
+}
+
+.logoName span{
+    white-space: nowrap;
 }
 
 .navImg img:hover ~ .logoName{
@@ -164,6 +170,15 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.rhs .typed{
+    display: inline-block;
+    height: 3.3rem;
+    overflow: hidden; 
+    font-family: 'Roboto Mono';
+    color: #48ddd6;
+    text-shadow:0px 0px 0px #BA9DD2;
 }
 
 .lhs{

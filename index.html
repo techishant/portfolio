@@ -18,7 +18,7 @@
                 <img
                 src="https://avatars.githubusercontent.com/u/74040166?v=4"
                 alt="LOGO" />
-                <div class="logoName">Ishant Sharma</div>
+                <div class="logoName"><span>Ishant Sharma</span></div>
             </div>
         </div>
         <nav class="navLinks">
@@ -71,7 +71,7 @@
 <script>
     // Can also be included with a regular script tag
     var options = {
-    strings: ['A tech enthusiast', 'A data science enthusiast', 'A web developer', 'Likes problem solving'],
+    strings: ['A tech enthusiast', 'Loves exploring CS', 'A web developer', 'Likes problem solving', "Always active"],
     typeSpeed: 40,
     smartBackspace: true
     };
@@ -93,7 +93,9 @@
     .then(
         (response) => {
             console.log(response)
-            document.getElementById('AboutCont').innerText = response.bio;
+            if (response.bio != undefined){
+                document.getElementById('AboutCont').innerText = response.bio;
+            }
         }
     )
 </script>
