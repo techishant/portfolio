@@ -3,11 +3,11 @@
 /* ----------------------------------------------- */
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
+
+// particlesJS.load('particles-js', 'particles.json', function() {
+//   console.log('particles.js loaded - callback');
+// });
+
 
 /* Otherwise just put the config content (json): */
 
@@ -16,23 +16,22 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 45,
+        "value": 50,
         "density": {
-          "enable": true,
+          "enable": false,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#753FA2"
+        "value": "#0B525B"
       },
       "shape": {
-        "type": "circle",
+        "type": "circle", // border
         "stroke": {
-          "width": 0,
-          "color": "#006466"
+          "width": 0
         },
         "polygon": {
-          "nb_sides": 14
+          "nb_sides": 1
         },
         "image": {
           "src": "img/github.svg",
@@ -41,81 +40,43 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
-        "random": false,
+        "value": 0.4,
+        "random": true,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 0.7,
           "opacity_min": 0.5,
           "sync": false
         }
       },
       "size": {
-        "value": 3,
-        "random": false,
+        "value": 50,
+        "random": true,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 7,
-          "size_min": 2.5,
+          "size_min": 12,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
-        "color": "#B8A9C6",
+        "color": "#000",
         "opacity": 0.4,
-        "width": 1
+        "width": 0
       },
       "move": {
         "enable": true,
-        "speed": 6,
-        "direction": "none",
+        "speed": 3,
+        "direction": 0,
         "random": false,
         "straight": false,
         "out_mode": "out",
         "attract": {
           "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
+          "rotateX": 0,
+          "rotateY": 0
         }
       }
     },
