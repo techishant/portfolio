@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 :root{
     --text:#fff;
-    /* --bg:#1B3A4B; */
     --bg:#212F45;
     --nav: rgba(255, 255, 255, 0.075);
     --light-bg: rgba(0, 0, 0, 0.048);
@@ -237,13 +236,15 @@ body{
     width: 60%;
 }
 
+
+/* about  */
+
 .aboutSect{
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--MidnightGreenEagleGreen-I);
 }
 
 .Aboutlogo{
@@ -267,7 +268,6 @@ body{
 .aboutSect p{
     font-size: 2rem;
     width: 46rem;
-    /* background: red; */
 }
 
 .aboutSect h1{
@@ -278,45 +278,3 @@ body{
     padding: 2rem;
 }
 
-.skillSect{
-    height: 100vh;
-    width: 100%;
-    background: var(---light-bg1);
-}
-
-.skillSect ul li{
-    height: 6rem;
-    width: 50rem;
-    border-radius: 2rem;
-    background: #eee;
-    display: flex;
-    align-items: center;
-    padding: 0 2rem;
-}
-
-.skillSect span{
-    color: #000000;
-    background: transparent;
-    height: 1.8rem;
-    width: 100%;
-    border-radius: 2rem;
-    box-shadow: inset 0 0 3px #666;
-    position: relative;
-}
-
-.skillSect span::before{
-    content: "Python";
-    background: red;
-    height: inherit;
-    width: 50%;
-    position: absolute;
-    border-radius: inherit;
-    display: grid;
-    place-items: center;
-}
-
-.skillSect{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}

@@ -1,3 +1,18 @@
+alert("This website is still under development. More at GitHub: https://github.com/techishant/portfolio")
+
+// Can also be included with a regular script tag
+var options = {
+    strings: ['A tech enthusiast', 'Loves exploring CS', 'A web developer', 'Likes problem solving', "Always active"],
+    typeSpeed: 40,
+    smartBackspace: true
+    };
+var typed = new Typed('.typed', options);
+
+const tilt = $('.AboutlogoTilt').tilt();
+tilt.on('change');  // parameters: event, transforms
+tilt.on('tilt.mouseLeave'); // parameters: event
+tilt.on('tilt.mouseEnter'); // parameters: event
+
 var Nav_Img = document.querySelector(".navImg img"),
 About_Img = document.querySelector(".aboutImg");
 
