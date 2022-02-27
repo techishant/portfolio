@@ -1,4 +1,4 @@
-alert("This website is still under development. More at GitHub: https://github.com/techishant/portfolio")
+// alert("This website is still under development. More at GitHub: https://github.com/techishant/portfolio")
 
 // Can also be included with a regular script tag
 var options = {
