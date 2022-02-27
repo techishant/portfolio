@@ -200,7 +200,12 @@ body{
     font-size: 2.5rem;
 }
 
-.landingSect
+/* .landingSect */
+
+.landingImg{
+    height: 39rem;
+    width: 39rem;
+}
 
 .rhs{
     height: 100vh;
@@ -229,10 +234,6 @@ body{
     justify-content: center;
 }
 
-.landingImg{
-    height: 39rem;
-    width: 39rem;
-}
 
 .aboutSect{
     height: 100vh;
