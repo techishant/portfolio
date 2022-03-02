@@ -1,5 +1,7 @@
 // alert("This website is still under development. More at GitHub: https://github.com/techishant/portfolio")
 
+console.log(parseInt((Math.random()*30)+20))
+
 // Can also be included with a regular script tag
 var options = {
     strings: ['A tech enthusiast', 'Loves exploring CS', 'A web developer', 'Likes problem solving', "Always active"],
