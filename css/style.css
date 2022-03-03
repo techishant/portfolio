@@ -187,12 +187,15 @@ body {
 }
 
 .LandingWave {
-  position: absolute;
-  height: fit-content;
-  width: 100%;
-  top: -22%;
-  left: 0;
-  opacity: 0.3;
+    position: absolute;
+    height: 320px;
+    background: url(/assets/wave.svg);
+    background-position: bottom;
+    background-size: cover;
+    min-width: calc(100vw - var(--scrollbar_width));
+    top: -28.7%;
+    left: 0;
+    /* opacity: 0.3; */
 }
 
 .landingSect h1 {
@@ -321,7 +324,7 @@ body {
 }
 
 .aboutSect {
-  height: 80vh;
+  height: 79vh;
   width: 100%;
   display: flex;
   align-items: center;
