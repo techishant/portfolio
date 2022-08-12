@@ -15,7 +15,15 @@
     --bg4:  #7c6f64;
 }
 
+
+green{  color:  var(--green);   }
+gray{   color:  var(--gray);    }
+fg4{    color:  var(--fg4);     }    
+bg2{    color:  var(--bg2);     }
+
+
 body{
+    position: relative;
     background: #282828;
     font-family: Consolas, 'Courier New', monospace;
 }
@@ -108,14 +116,24 @@ nav .git arrLeft{
     right: -12px;
 }
 
+/* LINE NUMBER */
+#ruler{
+    display: block;
+    top: 24px;
+    position: absolute;
+    width: fit-content;
+    min-width: 24px;
+    max-width: fit-content;
+    height: fit-content;
+    text-align: right;
+    word-break: break-word;
+    padding-right: 4px;
+    color: var(--bg4);
+}
+
+
 h1{
     color: #ebdbb2;
 }
 
 
-green{ color: var(--green); }
-gray{ color:  var(--gray);}
-fg4{ color: var(--fg4);}
-bg2{ color: var(--bg2);}
-/* gray{ color: var(--gray)}; */
-/* gray{ color: var(--gray)}; */

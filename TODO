@@ -1,7 +1,7 @@
 .. @ BASIC STRUCTURE
 @ HOME
     .. - navbar
-    - sticky line numbers
+    .. - sticky line numbers
 @ ABOUT
     - animating graph
     - small number
