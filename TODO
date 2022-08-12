@@ -1,5 +1,6 @@
+.. @ BASIC STRUCTURE
 @ HOME
-    - navbar
+    .. - navbar
     - sticky line numbers
 @ ABOUT
     - animating graph

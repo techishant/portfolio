@@ -3,3 +3,119 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --green:#b8bb26;
+    --gray: #928374;
+    --fg4:  #a89984;
+    --bg:   #282828;
+    --bg1:  #3c3836;
+    --bg2:  #504945;
+    --bg3:  #665c54;
+    --bg4:  #7c6f64;
+}
+
+body{
+    background: #282828;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    height: 24px;
+    width: 100%;
+    background: transparent;
+    align-items: center;
+}
+
+arrLeft{
+    position: absolute;
+    top: 0;
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid;
+}
+
+nav .user{
+    padding-left: 2px;
+    height: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: fit-content;
+    background: var(--bg1);
+    z-index: 12;
+}
+
+nav .user arrLeft:first-of-type{
+    border-left-color: var(--bg1);
+    right: -12px;
+    background: var(--fg4);
+}
+
+nav .user arrLeft:last-of-type{
+    border-left-color: var(--fg4);
+    right: -24px;
+    width: 10px;
+    
+}
+
+nav .tabs{
+    padding-left: 24px;
+    padding-right: 12px;
+    position: relative;
+    color: #282828;
+    background: var(--fg4);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+nav .tabs ul{
+    display: flex;
+    list-style: none;
+    column-gap: 24px;
+    width: inherit;
+}
+
+nav .tabs arrLeft{
+    border-left-color: var(--fg4);
+    position: absolute;
+    right: -12px;
+}
+
+nav .git{
+    color: var(--fg4);
+    text-decoration: underline;
+    padding-left: calc(12px + 2px);
+    padding-right: 2px;
+    height: inherit;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: fit-content;
+    background: var(--bg1);
+}
+
+nav .git arrLeft{
+    border-left-color: var(--bg1);
+    right: -12px;
+}
+
+h1{
+    color: #ebdbb2;
+}
+
+
+green{ color: var(--green); }
+gray{ color:  var(--gray);}
+fg4{ color: var(--fg4);}
+bg2{ color: var(--bg2);}
+/* gray{ color: var(--gray)}; */
+/* gray{ color: var(--gray)}; */
