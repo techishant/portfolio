@@ -17,6 +17,8 @@
     --yellow:   #d79921;
     --purple:   #d3869b;
     --aqua:     #8ec07c;
+    --orange:   #fe8019;
+    --fg:       #ebdbb2;
 }
 
 
@@ -35,6 +37,7 @@ body{
     position: relative;
     background: #282828;
     font-family: Consolas, 'Courier New', monospace;
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
@@ -160,4 +163,57 @@ nav .git arrLeft{
 
 .landingPage h4{
     color: var(--yellow);
+}
+/* ABOUT */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(35, 63, 17); */
+    height: 100vh;
+    width: calc(100%-20px);
+    margin-left: 30px;
+}
+
+#about h1{
+    font-size: 54px;
+    color: var(--green);
+}
+
+#my-chart{
+    --color: var(--fg) !important;
+    --line-size: 12px;
+    overflow: hidden;
+}
+
+
+.data{
+    background: var(--bg1);
+    z-index: 10;
+    color: var(--yellow);
+    /* display: none; */
+}
+
+.bott{
+    margin-bottom: -40px;
+}
+
+.dataDots{
+    position: relatives;
+    background: var(--orange);
+    margin-right: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#my-chart tbody {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#my-chart tbody th {
+    background-color: #fff;
+    z-index: 1;
 }

@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- charts.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Ishant</title>
 </head>
 <body>
@@ -33,11 +39,49 @@
     <nav id="ruler">
         1 2 3 4 5 ....
     </nav>
-
-    <div id="home" class="landingPage">
+    <!-- HOME -->
+    <div id="home" class="landingPage snapChild">
         <h1>Hi, I'm <red>Ishant!</red> </h1>
         <h4>A Web Developer</h4>
     </div>
+    <!-- ABOUT -->
+    <div class="aboutPage snapChild" id="about">
+        <h1>[About]</h1>
+        <table class="charts-css line" data-aos="fade-up" data-aos-anchor-placement="center-bottom" id="my-chart">
+            <tbody>
+              <tr>
+                <td style="--start: 0.3; --size: 0.7"> <span class="data"> Student</span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.7; --size: 0.3"> <span class="data bott"> Web Devloper</span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.3; --size: 0.5"> <span class="data" style="width: 212px"> Data Science Enthusiast</span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.5; --size: 0.2"> <span class="data bott"> HTML/CSS</span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.2; --size: 0.6"> <span class="data"> Python </span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.6; --size: 0.1"> <span class="data bott"> Django</span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.1; --size: 0.8"> <span class="data"> Java </span> <span class="dataDots"></span> </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.8; --size: 0.2"> <span class="data bott"> Javascript </span><span class="dataDots"></span>  </td>
+              </tr>
+              <tr>
+                <td style="--start: 0.2; --size: 0.5"> <span class="data"> JOGL/JOGAMP </span><span class="dataDots"></span>  </td>
+              </tr>
+            </tbody>
+          
+          </table>
+    </div>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
 </html>
