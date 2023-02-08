@@ -154,6 +154,7 @@ nav .git arrLeft{
     height: calc(100vh - 24px);
     width: calc(100%-20px);
     margin-left: 30px;
+    border-bottom: 1px solid var(--bg3);
 }
 
 .landingPage h1{
@@ -175,6 +176,8 @@ nav .git arrLeft{
     height: 100vh;
     width: calc(100%-20px);
     margin-left: 30px;
+    border-bottom: 1px solid var(--bg3);
+    padding-top: 20px;
 }
 
 #about h1{
